@@ -1,7 +1,8 @@
 import React from 'react';
 
-const page = () => {
-  return <div>channel/[id]</div>;
+const page = (props) => {
+  console.log(props);
+  return <div>channel/[{props.params.id}]</div>;
 };
 
 export default page;
